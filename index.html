@@ -46,6 +46,19 @@
     <!-- "italic word" is better then "emphasized word" -->
     <p>Lorem ipsum dolor sit amet <i>ITALIC</i> consectetur adipisicing elit. Suscipit, assumenda!</p>
 
+    <!-- strike text -->
+    <p>Lorem ipsum <strike>strike text</strike> dolor sit amet.</p>
+
+    <!-- Monospaced Font -->
+    <p>The following word uses a <tt>monospaced</tt> typeface.</p>
+    
+    <!-- Superscript Text -->
+    <p>The following word uses a <sup>superscript</sup> typeface.</p>
+
+    <!-- Subscript Text -->
+    <p>The following word uses a <sub>subscript</sub> typeface.</p>
+
+
     <!-- Line Break   "br"----- "self closing tag" -->
     <p>Lorem ipsum dolor sit amet. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ipsam!
     </p>
@@ -71,5 +84,120 @@
     <!-- this pictures is source.unsplash.com on site -->
     <img src="https://source.unsplash.com/user/erondu/720x600" alt="remote image">
 
+    <!-- Lists and Tables -->
+    <h2>Lists And Tables</h2>
+    <ul>
+        <li>1...This is my unordered list</li>
+        <li>2...This is my unordered list</li>
+        <li>3...This is my unordered list</li>
+    </ul>
+
+    <ol>
+        <li>1...This is my ordered list</li>
+        <li>2...This is my ordered list</li>
+        <li>3...This is my ordered list</li>
+    </ol>
+
+    <!-- unordered list attributes is SQUARE, DISC, CIRCLE -->
+    <ul type="circle">
+        <li>1...This is my unordered list</li>
+        <li>2...This is my unordered list</li>
+        <li>3...This is my unordered list</li>
+    </ul>
+
+
+    <!-- ordered list attributes is <ol type = "1"> - Default-Case Numerals. -->
+        <!-- <ol type = "I"> - Upper-Case Numerals. -->
+        <!-- <ol type = "i"> - Lower-Case Numerals. -->
+        <!-- <ol type = "A"> - Upper-Case Letters. -->
+        <!-- <ol type = "a"> - Lower-Case Letters. -->
+    <ol type="A">
+        <li>1...This is my ordered list</li>
+        <li>2...This is my ordered list</li>
+        <li>3...This is my ordered list</li>
+    </ol>
+
+
+
+    <h3>tables</h3>
+    <table border="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nomi</td>
+                <td>Nomi@gmail.com</td>
+                <td>1234----</td>
+            </tr>
+            <tr>
+                <td>shezi</td>
+                <td>shezi@gmail.com</td>
+                <td>4567----</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+    <h1>This is HTML form</h1>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+
+        <label for="search">Search:</label>
+        <div>
+            <input type="search" name="mySearch" id="search">
+        </div>
+        <br>
+
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" name="myDate" id="">
+        </div>
+        <br>
+
+        <div>
+            Are you Eligibl?: <input type="checkbox" name="myEligibility" id="">
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+
+        <div>
+            <label for="mobile">Mobile</label>
+            <select name="myMobile" id="mobile">
+                <option value="Samsung">Samsung</option>
+                <option value="Huawei">Huawei</option>
+            </select>
+        </div>
+
+        <div>
+            Write about yourself: <br> <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now">
+        </div>
+    </form>
 </body>
 </html>
